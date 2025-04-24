@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Bootstrap } from 'react-bootstrap-icons';
 import styles from '../../styles/Sidebar.module.css';
 
 interface MenuItem {
@@ -142,9 +141,14 @@ const menuItems: MenuItem[] = [
 
 const Sidebar: React.FC = () => {
   const [isSidebarActive, setIsSidebarActive] = useState(true);
+  const [activeSubmenu, setActiveSubmenu] = useState<number | null>(null);
 
   const toggleSidebar = () => {
     setIsSidebarActive(!isSidebarActive);
+  };
+
+  const toggleSubmenu = (index: number) => {
+    setActiveSubmenu(activeSubmenu === index ? null : index);
   };
 
   return (
@@ -176,17 +180,26 @@ const Sidebar: React.FC = () => {
                   <li className={styles.sidebarTitle}>{item.title}</li>
                 ) : (
                   <li className={`${styles.sidebarItem} ${item.subMenu ? styles.hasSub : ''}`}>
-                    <a
-                      href={item.subMenu ? '#' : item.link}
-                      className={styles.sidebarLink}
-                      data-bs-toggle={item.subMenu ? 'collapse' : undefined}
-                      data-bs-target={item.subMenu ? `#menu-${index}` : undefined}
-                    >
-                      <i className={item.icon} />
-                      <span>{item.title}</span>
-                    </a>
+                    {item.subMenu ? (
+                      <a
+                        href="#"
+                        className={styles.sidebarLink}
+                        onClick={() => toggleSubmenu(index)}
+                      >
+                        <i className={item.icon} />
+                        <span>{item.title}</span>
+                      </a>
+                    ) : (
+                      <Link to={item.link || '#'} className={styles.sidebarLink}>
+                        <i className={item.icon} />
+                        <span>{item.title}</span>
+                      </Link>
+                    )}
                     {item.subMenu && (
-                      <ul className={`${styles.submenu} collapse`} id={`menu-${index}`}>
+                      <ul
+                        className={`${styles.submenu} ${activeSubmenu === index ? styles.active : ''}`}
+                        id={`menu-${index}`}
+                      >
                         {item.subMenu.map((sub, subIndex) => (
                           <li key={subIndex} className={styles.submenuItem}>
                             <Link to={sub.link}>{sub.title}</Link>

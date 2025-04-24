@@ -1,10 +1,11 @@
 .header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .burgerBtn {
   display: none;
-  color: #25396f; /* From .sidebar-wrapper .menu .sidebar-link */
+  color: #25396f;
+  /* From .sidebar-wrapper .menu .sidebar-link */
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -12,5 +13,11 @@
 @media (max-width: 1199px) {
   .burgerBtn {
     display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .burgerBtn {
+    display: none !important;
   }
 }

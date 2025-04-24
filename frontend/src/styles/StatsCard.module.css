@@ -1,15 +1,9 @@
-.card {
-  margin-bottom: 2.2rem;
-  /* From .card */
-  border: none;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 .cardBody {
-  padding: 2rem 1rem;
-  /* From .py-4-5 and .px-3 */
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  flex: 1 1 auto;
 }
 
 .row {
@@ -79,8 +73,6 @@
   margin: 0;
 }
 
-
-
 [class^="iconly-bold"],
 [class*=" iconly-bold"] {
   font-family: 'Iconly---Bold' !important;
@@ -116,6 +108,8 @@
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto;
+  width: 50%;
 }
 
 .cardBody {
@@ -180,18 +174,9 @@
   margin: 0;
 }
 
-@media (max-width: 767px) {
-  .statsIcon {
-    float: left;
-    margin-bottom: 0.4rem;
-  }
-}
-
-
-@media (max-width: 767px) {
-  .statsIcon {
-    float: left;
-    margin-bottom: 0.4rem;
-    /* From .stats-icon media query */
+@media (max-width: 1610px) {
+  .card {
+    flex: 0 0 auto;
+    width: 50%;
   }
 }
