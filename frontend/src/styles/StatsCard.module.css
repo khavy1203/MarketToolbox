@@ -1,0 +1,197 @@
+.card {
+  margin-bottom: 2.2rem;
+  /* From .card */
+  border: none;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardBody {
+  padding: 2rem 1rem;
+  /* From .py-4-5 and .px-3 */
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.iconWrapper {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+}
+
+.statsIcon {
+  width: 3rem;
+  /* From .stats-icon */
+  height: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.purple {
+  background-color: #9694ff;
+  /* From .stats-icon.purple */
+}
+
+.blue {
+  background-color: #57caeb;
+  /* From .stats-icon.blue */
+}
+
+.green {
+  background-color: #5ddab4;
+  /* From .stats-icon.green */
+}
+
+.red {
+  background-color: #ff7976;
+  /* From .stats-icon.red */
+}
+
+.statsIcon i {
+  color: #fff;
+  font-size: 1.7rem;
+  /* From .stats-icon i */
+}
+
+.content {
+  flex: 0 0 66.667%;
+  max-width: 66.667%;
+}
+
+.title {
+  color: #6c757d;
+  /* From .text-muted */
+  font-size: 0.875rem;
+  margin: 0;
+  font-weight: 600;
+  /* From .font-semibold */
+}
+
+.value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  /* From .font-extrabold */
+  margin: 0;
+}
+
+
+
+[class^="iconly-bold"],
+[class*=" iconly-bold"] {
+  font-family: 'Iconly---Bold' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconly-boldShow:before {
+  content: "\e952";
+}
+
+.iconly-boldProfile:before {
+  content: "\e94b";
+}
+
+.iconly-boldAdd-User:before {
+  content: "\e903";
+}
+
+.iconly-boldBookmark:before {
+  content: "\e91a";
+}
+
+.card {
+  margin-bottom: 2.2rem;
+  border: none;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardBody {
+  padding: 2rem 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.iconWrapper {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
+}
+
+.statsIcon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.purple {
+  background-color: #9694ff;
+}
+
+.blue {
+  background-color: #57caeb;
+}
+
+.green {
+  background-color: #5ddab4;
+}
+
+.red {
+  background-color: #ff7976;
+}
+
+.statsIcon i {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.content {
+  flex: 0 0 66.667%;
+  max-width: 66.667%;
+}
+
+.title {
+  color: #6c757d;
+  font-size: 0.875rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .statsIcon {
+    float: left;
+    margin-bottom: 0.4rem;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .statsIcon {
+    float: left;
+    margin-bottom: 0.4rem;
+    /* From .stats-icon media query */
+  }
+}

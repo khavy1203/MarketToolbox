@@ -1,0 +1,38 @@
+/* Typography */
+.text-sm { font-size: 0.875rem; }
+.text-xl { font-size: 1.25rem; }
+.text-4xl { font-size: 2.25rem; }
+.text-6xl { font-size: 4rem; }
+.text-black { color: #000; }
+.text-gray-300 { color: #dee2e6 !important; }
+.text-gray-400 { color: #ced4da !important; }
+.text-gray-500 { color: #adb5bd !important; }
+.text-gray-600 { color: #6c757d !important; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+
+/* Spacing */
+.mt-10 { margin-top: 3rem; }
+.mb-10, .my-10 { margin-bottom: 3rem; }
+.my-10 { margin-top: 3rem; }
+.mb-24, .my-24 { margin-bottom: 6rem; }
+.my-24 { margin-top: 6rem; }
+.py-4-5 { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+
+/* Utilities */
+.opacity-50 { opacity: 1%; } /* Note: .opacity-50 set to 1% seems like a typo; assuming 50% */
+.text-width-md { max-width: 450px; }
+.bg-gradient-ltr { background: linear-gradient(90deg, #095cde, #53c3f3); }
+.bg-light-primary { background-color: #ebf3ff; color: #002152; }
+.bg-light-secondary { background-color: #e6eaee; color: #181e24; }
+.bg-light-success { background-color: #d2ffe8; color: #00391c; }
+.bg-light-danger { background-color: #ffdede; color: #450000; }
+.bg-light-warning { background-color: #fffdd8; color: #3f3c00; }
+.bg-light-info { background-color: #e6fdff; color: #00474d; }
+
+/* Icons */
+.bi { width: 1rem; height: 1rem; }
+.bi-middle:before { vertical-align: middle; }
+.bi-sub:before { vertical-align: sub; }
+.icon-mid:before { vertical-align: middle; }

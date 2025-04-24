@@ -1,0 +1,16 @@
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.burgerBtn {
+  display: none;
+  color: #25396f; /* From .sidebar-wrapper .menu .sidebar-link */
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+  .burgerBtn {
+    display: block;
+  }
+}

@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+}
+
+#main {}
+
+.sidebarActive {
+  margin-left: 300px;
+  padding: 2rem;
+}
+
+@media (max-width: 1199px) {
+  .main {
+    margin-left: 0;
+    /* From @media #main */
+  }
+}
